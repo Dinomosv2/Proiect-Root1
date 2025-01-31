@@ -1,4 +1,4 @@
-วิธีใช้งานเว็บ เปิด Terminal ใช้คำสั่ง npm installtall
+วิธีใช้งานเว็บ เปิด Terminal ใช้คำสั่ง npm install
 npm run start เพื่อใช้งาน
 
 ในหน้าLogin
