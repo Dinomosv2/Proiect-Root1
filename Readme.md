@@ -2,5 +2,5 @@
 npm run start เพื่อใช้งาน
 http://localhost:3000
 ในหน้าLogin
-ชื่อ agmin
+ชื่อ admin
 รหัส 1234
