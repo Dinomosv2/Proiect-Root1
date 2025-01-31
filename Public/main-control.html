@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>หน้าควบคุมหลัก</title>
+    <link rel="stylesheet" href="main-control.css">
+</head>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const zones = ["control-zone1", "control-zone2", "control-zone3"];
+    
+        function updateMainStatus() {
+            zones.forEach(zone => {
+                const isOn = localStorage.getItem(zone) === "true";
+                const statusSpan = document.querySelector(`.zone-control .zone[href="${zone}.html"] .status`);
+                
+                if (statusSpan) {
+                    statusSpan.textContent = isOn ? "เปิด" : "ปิด";
+                    statusSpan.style.color = isOn ? "green" : "red";
+                }
+            });
+        }
+    
+        updateMainStatus();
+    
+        window.addEventListener("storage", (event) => {
+            if (event.key === "updateMain") {
+                updateMainStatus();
+            }
+        });
+    });
+    </script>
+    
+<body>
+    <div class="container">
+        <header>
+            <h1>หน้าควบคุมหลัก</h1>
+        </header>
+        <main>
+            <div class="zone-control">
+                <a href="control-zone1.html" class="zone">ทุเรียนโซน 1 <span class="status off">ปิด</span></a>
+                <a href="control-zone2.html" class="zone">ทุเรียนโซน 2 <span class="status off">ปิด</span></a>
+                <a href="control-zone3.html" class="zone">ทุเรียนโซน 3 <span class="status off">ปิด</span></a>
+            </div>
+        </main>
+        <footer>
+            <nav>
+                <a href=main-control.html class="nav-link">หน้าควบคุม</a>
+                <a href="setting.html" class="nav-link">ตั้งค่า</a>
+            </nav>
+        </footer>
+    </div>
+</body>
+</html>

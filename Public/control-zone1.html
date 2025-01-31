@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ทุเรียนโซน 2</title>
+    <link rel="stylesheet" href="control-zone.css">
+</head>
+<body>
+    <div class="container">
+        <header class="zone-header">
+            <a href="main-control.html" class="back-button">←</a>
+            <h1>ทุเรียนโซน 2</h1>
+        </header>
+        <main class="zone-content">
+            <button class="mode-button" id="modeButton" onclick="openModeSelection1()">คลิกเลือกโหมด</button>
+            
+            <div class="status-circle" id="statusButton">กดเปิด</div>
+            <p class="status-text" id="statusText">สถานะปิดการทำงาน</p>
+            
+            <div class="info-section">
+                <button class="info-item">
+                    <img src="โหมดเซ็นเซอร์.jpg" class="icon" alt="ความชื้นในดิน">
+                    <span>ความชื้นในดิน</span>
+                    <span>31.1%</span>
+                </button>
+                <button class="info-item">
+                    <img src="ความชื้นอากาศ.jpg" class="icon" alt="ความชื้นในอากาศ">
+                    <span>ความชื้นในอากาศ</span>
+                    <span>52.4%</span>
+                </button>
+            </div>
+            
+        </main>
+    </div>
+    <script src="control-zone1.js"></script>
+</body>
+</html>

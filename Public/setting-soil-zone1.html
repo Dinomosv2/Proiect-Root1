@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ตั้งค่าความชื้นในดิน โซน 1</title>
+    <link rel="stylesheet" type="text/css" href="setting-soil-air.css">
+</head>
+<body>
+    <div class="container">
+        <h1>ค่าความชื้นในดิน โซน 1</h1>
+        <form id="soilForm">
+            <label for="soilMin">ความชื้นต่ำสุด</label>
+            <input type="number" id="soilMin" placeholder="ต่ำสุด" required>
+
+            <label for="soilMax">ความชื้นสูงสุด</label>
+            <input type="number" id="soilMax" placeholder="สูงสุด" required>
+
+            <div class="button-group">
+                <button type="button" id="cancelBtn" class="cancel">ยกเลิก</button>
+                <button type="submit" class="confirm">ยืนยัน</button>
+            </div>
+        </form>
+    </div>
+    <script src="setting-soil-zone1.js"></script>
+</body>
+</html>
